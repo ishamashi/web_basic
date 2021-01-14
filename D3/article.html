@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Basic Hari tiga</title>
+	<style>
+		* {
+		    box-sizing: border-box;
+		}
+		body {
+		    font-family: Arial;
+		    padding: 10px;
+		    background: #f1f1f1;
+		}
+		.header {
+		    padding: 30px;
+		    text-align: center;
+		    background: white;
+		}
+		.topnav {
+		    overflow: hidden;
+		    background-color: #333;
+		}
+		.topnav a {
+		  	float: left;
+		  	display: block;
+		  	color: #f2f2f2;
+		  	text-align: center;
+		  	padding: 14px 16px;
+		  	text-decoration: none;
+		}
+		.topnav a:hover {
+		   background-color: #ddd;
+		   color: black;
+		}
+
+		.row:after {
+		    content: "";
+		    display: table;
+		    clear: both;
+		}
+		.leftcolumn {   
+			margin: auto;
+		  	width: 75%;
+		}
+		.card {
+		    background-color: white;
+		    padding: 20px;
+		    margin-top: 20px;
+		}
+		.fakeimg {
+		    background-color: #aaa;
+		    width: 98%;
+		    height:	200px;
+		}
+
+		.footer {
+		    padding: 20px;
+		    text-align: center;
+		    background: #ddd;
+		    margin-top: 20px;
+		}
+		.img{
+		  	float: left;
+		  	width: 30%;
+		}
+		.article {
+		  	float: left;
+		  	width: 70%;
+		  	padding: 10px;
+		  	height:200px;
+		}
+		/* Responsive layout - ketika layar kurang dari 800px, Membuat colom atas bawah dan tidak kiri kanan */
+		@media screen and (max-width: 800px) {
+			.leftcolumn, .rightcolumn {   
+			    width: 100%;
+			    padding: 0;
+			}
+			.fakeimg {
+			    background-color: #aaa;
+			    width: 98%;
+		    	height: 130px;
+		    }
+		    .article {
+			  	float: left;
+			  	width: 70%;
+			  	padding: 10px;
+			  	height:130px;
+			}
+		}
+
+		/* Responsive layout - ketika layar kurang dari 400px, Membuat navbar bertumpukan dan tidak berdampingan */
+		@media screen and (max-width: 400px) {
+			.topnav a {
+			    float: none;
+			    width: 100%;
+			}
+			.img{
+				width: 100%;
+			}
+			.article {
+				width: 100%;
+				height: 250px;
+			}
+		    .fakeimg {
+			    background-color: #aaa;
+			    width: 100%;
+			    padding: 20px;
+		    	height:130px;
+		    }
+		}
+	</style>		
+</head>
+<body>
+	<div class="header">
+	    <h1>Ishamashi Article</h1>
+	    <p>Ini adalah website kumpulan artikel tentang dunia IT.</p>
+	</div>
+	<div class="topnav">
+	    <a href="index.html">Home</a>
+	    <a href="#" style=" background-color: #ddd; color: black;">Article</a>
+	    <a href="#">About</a>
+	    <a href="#" style="float:right">Search</a>
+	</div>
+
+	<div class="row">
+	  <div class="leftcolumn">
+	    <div class="card">
+	        <h2><a href="https://www.malasngoding.com/membuat-data-dummy-di-php-dengan-faker/">Membuat Data Dummy di PHP Dengan Faker</a></h2>
+			<div class="row">
+		        <div class="img">
+		        	<img class="fakeimg" src="https://www.malasngoding.com/wp-content/uploads/2020/08/Membuat-Data-Dummy-Dengan-Faker-PHP.png" alt="">
+		        </div>
+		        <div class="article">
+		        	<div class="berita">
+		        	 	Membuat Data Dummy di PHP Dengan Faker – Data dummy adalah data palsu yang dibuat dengan tujuan sebagai data contoh atau data sampel.
+		        	 	<p>Sumber (<a href="https://www.malasngoding.com/">MalasNgoding</a>)</p>
+		        	</div>
+		        </div>
+		    </div>
+	    </div>
+	    <div class="card">
+	        <h2><a href="https://www.malasngoding.com/menampilkan-file-pdf-di-html-dengan-mudah/">Menampilkan File PDF Di HTML Dengan Mudah</a></h2>
+			<div class="row">
+		        <div class="img">
+		        	<img class="fakeimg" src="https://www.malasngoding.com/wp-content/uploads/2020/08/Menampilkan-File-PDF-Di-HTML-Dengan-Mudah.png" alt="">
+		        </div>
+		        <div class="article">
+		        	<div class="berita">
+		        	 	Membuat Data Dummy di PHP Dengan Faker – Data dummy adalah data palsu yang dibuat dengan tujuan sebagai data contoh atau data sampel.
+		        	 	<p>Sumber (<a href="https://www.malasngoding.com/">MalasNgoding</a>)</p>
+		        	</div>
+		        </div>
+		    </div>
+	    </div>
+	    <div class="card">
+	        <h2><a href="https://www.malasngoding.com/menampilkan-file-pdf-di-html-dengan-mudah/">Menampilkan File PDF Di HTML Dengan Mudah</a></h2>
+			<div class="row">
+		        <div class="img">
+		        	<img class="fakeimg" src="https://www.malasngoding.com/wp-content/uploads/2020/08/Menampilkan-File-PDF-Di-HTML-Dengan-Mudah.png" alt="">
+		        </div>
+		        <div class="article">
+		        	<div class="berita">
+		        	 	Membuat Data Dummy di PHP Dengan Faker – Data dummy adalah data palsu yang dibuat dengan tujuan sebagai data contoh atau data sampel.
+		        	 	<p>Sumber (<a href="https://www.malasngoding.com/">MalasNgoding</a>)</p>
+		        	</div>
+		        </div>
+		    </div>
+	    </div>
+	    <div class="card">
+	        <h2><a href="https://www.malasngoding.com/menampilkan-file-pdf-di-html-dengan-mudah/">Menampilkan File PDF Di HTML Dengan Mudah</a></h2>
+			<div class="row">
+		        <div class="img">
+		        	<img class="fakeimg" src="https://www.malasngoding.com/wp-content/uploads/2020/08/Menampilkan-File-PDF-Di-HTML-Dengan-Mudah.png" alt="">
+		        </div>
+		        <div class="article">
+		        	<div class="berita">
+		        	 	Membuat Data Dummy di PHP Dengan Faker – Data dummy adalah data palsu yang dibuat dengan tujuan sebagai data contoh atau data sampel.
+		        	 	<p>Sumber (<a href="https://www.malasngoding.com/">MalasNgoding</a>)</p>
+		        	</div>
+		        </div>
+		    </div>
+	    </div>
+	    <div class="card">
+	        <h2><a href="https://www.malasngoding.com/menampilkan-file-pdf-di-html-dengan-mudah/">Menampilkan File PDF Di HTML Dengan Mudah</a></h2>
+			<div class="row">
+		        <div class="img">
+		        	<img class="fakeimg" src="https://www.malasngoding.com/wp-content/uploads/2020/08/Menampilkan-File-PDF-Di-HTML-Dengan-Mudah.png" alt="">
+		        </div>
+		        <div class="article">
+		        	<div class="berita">
+		        	 	Membuat Data Dummy di PHP Dengan Faker – Data dummy adalah data palsu yang dibuat dengan tujuan sebagai data contoh atau data sampel.
+		        	 	<p>Sumber (<a href="https://www.malasngoding.com/">MalasNgoding</a>)</p>
+		        	</div>
+		        </div>
+		    </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="footer">
+	    <h2>Footer</h2>
+	</div>
+
+
+</body>
+</html>
